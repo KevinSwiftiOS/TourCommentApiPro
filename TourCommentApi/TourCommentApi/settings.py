@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 import datetime
+from mongoengine import *
+
+
+
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -38,8 +42,18 @@ INSTALLED_APPS = [
 'rest_framework_swagger',
 'rest_framework',
     'corsheaders',
+    'django_crontab',
+    'TourCommentApi',
+    'TestModel'
+
+
 ]
 # django-rest-framework设置
+
+CRONJOBS =[
+('*/1 * * * *', 'TestModel.views.test','>> /home/info.log')
+]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -80,6 +94,7 @@ WSGI_APPLICATION = 'TourCommentApi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -87,7 +102,18 @@ DATABASES = {
     }
 }
 
-
+# DATABASES = {
+#     'default': {
+#         'ENGINE': None, # 把默认的数据库连接至为None
+#     }
+# }
+from mongoengine import connect
+connect(db='dspider2',
+    username='lab421',
+    password='lab421_1',
+    host='120.55.59.187',
+port = 28117,
+        authentication_source='admin'); # 连接的数据库名称
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
@@ -105,10 +131,17 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-AUTHENTICATION_BACKENDS = (
-    'T.auth.UsernamePasswordAuth',
-)
 
+CACHES = {
+ 'default': {
+  'BACKEND': 'django.core.cache.backends.db.DatabaseCache',  # 指定缓存使用的引擎
+  'LOCATION': 'dspider2',          # 数据库表
+  'OPTIONS':{
+   'MAX_ENTRIES': 300,           # 最大缓存记录的数量（默认300）
+   'CULL_FREQUENCY': 3,          # 缓存到达最大个数之后，剔除缓存个数的比例，即：1/CULL_FREQUENCY（默认3）
+  }
+ }
+}
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
@@ -155,3 +188,38 @@ CORS_ALLOW_HEADERS = (
     'XMLHttpRequest',    'X_FILENAME',    'accept-encoding',    'authorization',    'content-type',    'dnt',    'origin',    'user-agent',    'x-csrftoken',    'x-requested-with',
 )
 ALLOWED_HOSTS = ['*',]
+#日志配置
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '[%(asctime)s] [%(levelname)s] %(message)s'
+        },
+    },
+    'handlers': {
+        'console':{
+            'level':'INFO',
+            'class':'logging.StreamHandler',
+            'formatter': 'verbose'
+        },
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': '../monitor.log',
+            'formatter': 'verbose'
+        },
+        'email': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'include_html' : True,
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file', 'email'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
