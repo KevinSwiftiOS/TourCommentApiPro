@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="40a3c68a-ea1b-4290-82e3-7ed5003528e0" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/TourCommentApi$settings.coverage" NAME="settings Coverage Results" MODIFIED="1539614724088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TourCommentApi" />
+    <SUITE FILE_PATH="coverage/TourCommentApi$test.coverage" NAME="test Coverage Results" MODIFIED="1539602134338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TourCommentApi" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TourCommentApi/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+              <folding>
+                <element signature="e#315#324#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestModel/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaticViews.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TourCommentApi/StaticViews.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectToDBView.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/ConnectToDBView.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JingquListView.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/JingquListView.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>AUTHENTICATION_BACKENDS</find>
+      <find>guardian</find>
+      <find>REST_FRAM</find>
+      <find>print</find>
+      <find>comments</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>response_as_json</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TourCommentApi/models.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/IndexView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/regions.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/websites.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/CustomBackendView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/users/views.py" />
+        <option value="$PROJECT_DIR$/mode.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/model.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/serializers.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/GetMessageView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/ProductViewSet.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/userModels.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/auth.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/views.py" />
+        <option value="$PROJECT_DIR$/users/serializers.py" />
+        <option value="$PROJECT_DIR$/users/views.py" />
+        <option value="$PROJECT_DIR$/users/models.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Models/models.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Models/userModels.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/views.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Models/UserModel.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/LoginView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/GetAllTourView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/DetailView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Statics/Regions.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Models/RegionInfoModel.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Models/InnerRegionInfo.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Models/InnerRegionInfoModel.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/JingquCountView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/jingquDetailView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/JingquDymanicCommentView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/CommonView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/SpotNumComparedView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/JingdianListView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Models/CommentModel.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/test.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/urls.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/ConnectToDBView.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/Views/JingquListView.py" />
+        <option value="$PROJECT_DIR$/TestModel/views.py" />
+        <option value="$PROJECT_DIR$/TourCommentApi/settings.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1379" />
+    <option name="y" value="89" />
+    <option name="width" value="1301" />
+    <option name="height" value="736" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TourCommentApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TourCommentApi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TourCommentApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TourCommentApi" type="462c0819:PsiDirectoryNode" />
+              <item name="TestModel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TourCommentApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TourCommentApi" type="462c0819:PsiDirectoryNode" />
+              <item name="TourCommentApi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TourCommentApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TourCommentApi" type="462c0819:PsiDirectoryNode" />
+              <item name="TourCommentApi" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\资料\GitHub\TourCommentApi\TourCommentApi\Statics" />
+      <recent name="D:\资料\GitHub\TourCommentApi\TourCommentApi\Views" />
+      <recent name="D:\资料\GitHub\TourCommentApi\TourCommentApi\Models" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.settings">
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TourCommentApi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TourCommentApi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TourCommentApi/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TourCommentApi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TourCommentApi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TourCommentApi/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="TourCommentApi" type="Python.DjangoServer" factoryName="Django server">
+      <module name="TourCommentApi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.TourCommentApi" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.settings" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.settings" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40a3c68a-ea1b-4290-82e3-7ed5003528e0" name="Default" comment="" />
+      <created>1539260349600</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539260349600</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="13" y="89" width="1301" height="736" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16256158" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7627451" visible="true" weight="0.2954726" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.027799841" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
+      <window_info id="Structure" order="1" sideWeight="0.2372549" side_tool="true" visible="true" weight="0.2954726" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Models/UserModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/GetAllTourView.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2516">
+          <caret line="149" column="18" lean-forward="true" selection-start-line="149" selection-start-column="18" selection-end-line="149" selection-end-column="18" />
+          <folding>
+            <element signature="e#315#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda/envs/en1/Lib/site-packages/rest_framework_jwt/views.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/CustomBackendView.py" />
+    <entry file="file://$PROJECT_DIR$/mode.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/model.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/users/views.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/serializers.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/GetMessageView.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/ProductViewSet.py" />
+    <entry file="file://E:/Anaconda/envs/en1/Lib/site-packages/rest_framework_jwt/utils.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/auth.py" />
+    <entry file="file://$PROJECT_DIR$/users/serializers.py" />
+    <entry file="file://$PROJECT_DIR$/users/views.py" />
+    <entry file="file://$PROJECT_DIR$/users/models.py" />
+    <entry file="file://E:/Anaconda/envs/en1/Lib/site-packages/rest_framework/views.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Models/models.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Models/userModels.py" />
+    <entry file="file://D:/weChatFile/WeChat Files/caokb24/Files/GlobalExceptionResolver.java" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/views.py" />
+    <entry file="file://E:/Anaconda/envs/en1/Lib/site-packages/mongoengine/connection.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/GetAllTourView.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/IndexView.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/DetailView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Statics/Regions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="1" column="255" selection-start-line="1" selection-start-column="247" selection-end-line="1" selection-end-column="255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Models/InnerRegionInfo.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Models/RegionInfoModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Models/InnerRegionInfoModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/LoginView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Statics/Websites.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="63" selection-start-column="63" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Models/UserModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/1120017734/builtins.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/CommonView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/JingquDymanicCommentView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/JingquCountView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/SpotNumComparedView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/JingdianListView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Models/CommentModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/en1/lib/python3.6/site-packages/apscheduler/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views.py" />
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/jingquDetailView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="26" column="108" lean-forward="true" selection-start-line="26" selection-start-column="108" selection-end-line="26" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/JingquListView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/Views/ConnectToDBView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/StaticViews.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestModel/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TourCommentApi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+          <folding>
+            <element signature="e#315#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
