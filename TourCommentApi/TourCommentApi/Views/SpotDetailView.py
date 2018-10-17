@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 
 from .CommonView import *
 from ..Statics.Websites import *;
-from ..Models.ＣonnectToDBModel import *;
+from ..Models.ConnectToDBModel import *;
 from ..Models.RegionInfoModel import *;
 import datetime
 
@@ -13,16 +13,28 @@ def get_spot_detail(request,id):
     search_keys = [(regioninfo.objects.get(id = str(id))).search_key];
     if(id != '1'):
         search_keys.append('千岛湖');
+    if(datetime.datetime.now() < 6):
+        #返回第几周
+        now_date = str(datetime.datetime.now().year).join('-16');
+        time = '周';
+        time_search_key = 'comment_week';
+    else:
+        now_date = str(datetime.datetime.now().year).join('-').join(str(datetime.datetime.now().month).zfill(2));
+        time = '月';
+        time_search_key = 'comment_season';
 
-    nowMonth = str(datetime.datetime.now().year) + '-' + str(datetime.datetime.now().month).zfill(2);
-    startMonth = str(datetime.datetime.now().year) + '-01';
+
+    start_date = str(datetime.datetime.now().year) + '-01';
+    #这里需要进行判断如果是6月前 返回周 如果是6月后 返回月 增加time字段
+    now_month = str(datetime.datetime.now().year).join('-').join(str(datetime.datetime.now().month).zfill(2));
     #获取开始至结束时间段
-    time_list = get_time_list(startMonth,nowMonth,'月');
+    time_list = get_time_list(start_date,now_date,'月');
     res = {};
     numAxis = [];
     scoreAxis = [];
+    #这里统计始终是本月
     spot_comment_data =  comments_data[
-        (comments_data['search_key'] == spot) & (comments_data['comment_month'] == nowMonth)];
+        (comments_data['search_key'] == spot) & (comments_data['comment_month'] == now_month)];
     res['monthCommentNumber'] = spot_comment_data.iloc[:,0].size;
     res['monthCommentScore'] = round(spot_comment_data['comment_score'].mean(), 1);
     res['yearCommentNumber'] = comments_data[

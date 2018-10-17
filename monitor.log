@@ -1061,3 +1061,787 @@ AttributeError: 'QuerySet' object has no attribute 'objects'
 [2018-10-15 14:59:50,915] [INFO] This is an errormsg
 [2018-10-15 14:59:50,916] [INFO] "GET /api/jingqulist HTTP/1.1" 200 57
 >>>>>>> 7e6f8e4230555896acacc7a72ae975759fb7d685
+[2018-10-17 08:41:09,953] [WARNING] "GET /api/spotlist HTTP/1.1" 401 9379
+[2018-10-17 08:41:10,494] [INFO] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[2018-10-17 08:41:10,644] [INFO] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+[2018-10-17 08:41:10,792] [INFO] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[2018-10-17 08:41:10,802] [INFO] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[2018-10-17 08:41:10,807] [INFO] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+[2018-10-17 08:41:10,934] [INFO] "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[2018-10-17 08:41:11,105] [INFO] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+[2018-10-17 08:41:11,166] [INFO] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[2018-10-17 08:41:11,689] [INFO] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[2018-10-17 08:41:11,704] [INFO] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+[2018-10-17 08:41:11,705] [INFO] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+[2018-10-17 08:41:12,732] [WARNING] Not Found: /favicon.ico
+[2018-10-17 08:41:12,735] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2912
+[2018-10-17 08:41:18,797] [WARNING] "GET /api/spotlist HTTP/1.1" 401 9379
+[2018-10-17 08:41:21,699] [WARNING] "GET /api/spotlist?format=json HTTP/1.1" 401 58
+[2018-10-17 08:41:23,985] [WARNING] "GET /api/spotlist HTTP/1.1" 401 9379
+[2018-10-17 09:32:27,188] [INFO] This is an errormsg
+[2018-10-17 09:32:27,193] [INFO] "GET /api/qdhspotlist HTTP/1.1" 200 52
+[2018-10-17 09:34:06,985] [INFO] This is an errormsg
+[2018-10-17 09:34:06,991] [INFO] "GET /api/qdhspotlist HTTP/1.1" 200 52
+[2018-10-17 09:36:21,341] [INFO] This is an errormsg
+[2018-10-17 09:36:21,346] [INFO] "GET /api/qdhspotlist HTTP/1.1" 200 52
+[2018-10-17 09:38:17,730] [INFO] This is an errormsg
+[2018-10-17 09:38:17,735] [INFO] "GET /api/qdhspotlist HTTP/1.1" 200 52
+[2018-10-17 09:39:42,405] [INFO] This is an errormsg
+[2018-10-17 09:39:42,413] [INFO] "GET /api/qdhspotlist HTTP/1.1" 200 52
+[2018-10-17 09:41:42,517] [INFO] "GET /api/qdhspotlist HTTP/1.1" 200 3677
+[2018-10-17 09:41:58,568] [INFO] "GET /api/qdhspotlist HTTP/1.1" 200 3677
+[2018-10-17 09:55:36,739] [INFO] "GET /api/spotlist HTTP/1.1" 200 3193
+[2018-10-17 09:55:46,542] [INFO] "GET /api/qdhspotlist HTTP/1.1" 200 3677
+[2018-10-17 10:20:35,816] [WARNING] Not Found: /api/spotnumcompared
+[2018-10-17 10:20:35,822] [WARNING] "POST /api/spotnumcompared HTTP/1.1" 404 2937
+[2018-10-17 10:21:42,311] [INFO] This is an errormsg
+[2018-10-17 10:21:42,315] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-17 10:26:39,396] [INFO] This is an errormsg
+[2018-10-17 10:26:39,400] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-17 10:29:25,366] [INFO] This is an errormsg
+[2018-10-17 10:29:25,371] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-17 10:31:40,190] [INFO] This is an errormsg
+[2018-10-17 10:31:40,195] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-17 10:34:17,283] [INFO] This is an errormsg
+[2018-10-17 10:34:17,291] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-17 10:36:48,007] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 86, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 15, in post_spot_compard
+    print(type(search_keys));
+UnboundLocalError: local variable 'type' referenced before assignment
+[2018-10-17 10:36:48,281] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 16934
+[2018-10-17 10:39:34,623] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 86, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 15, in post_spot_compard
+    print(type(search_keys));
+UnboundLocalError: local variable 'type' referenced before assignment
+[2018-10-17 10:39:34,910] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 16934
+[2018-10-17 10:41:04,931] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 86, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 20, in post_spot_compard
+    websites =list(body['websites']);
+UnboundLocalError: local variable 'list' referenced before assignment
+[2018-10-17 10:41:05,235] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 16941
+[2018-10-17 10:44:02,601] [INFO] "POST /api/spotcompared HTTP/1.1" 200 595
+[2018-10-17 10:44:47,007] [INFO] "POST /api/spotcompared HTTP/1.1" 200 595
+[2018-10-17 11:16:42,347] [INFO] "POST /api/spotcompared HTTP/1.1" 200 595
+[2018-10-17 11:17:32,128] [INFO] "POST /api/spotcompared HTTP/1.1" 200 595
+[2018-10-17 11:19:57,056] [INFO] "POST /api/spotcompared HTTP/1.1" 200 595
+[2018-10-17 11:21:40,405] [INFO] "POST /api/spotcompared HTTP/1.1" 200 732
+[2018-10-17 14:22:54,004] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 92, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 41, in post_spot_compard
+    body = json.loads(request.body);
+ValueError: Expected object or value
+[2018-10-17 14:22:54,195] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 16875
+[2018-10-17 14:26:05,399] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 92, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 41, in post_spot_compard
+    body = json.loads(request.body);
+ValueError: Expected object or value
+[2018-10-17 14:26:05,601] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 16874
+[2018-10-17 14:26:44,912] [INFO] This is an errormsg
+[2018-10-17 14:26:44,924] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-17 14:32:37,255] [INFO] "POST /api/spotcompared HTTP/1.1" 200 2492
+[2018-10-17 14:33:03,071] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in post_spot_compard
+    list = [get_website_data(website,time_search_key,time_list) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in <listcomp>
+    list = [get_website_data(website,time_search_key,time_list) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in get_website_data
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in <listcomp>
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 18, in get_region_data
+    time_list];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 17, in <listcomp>
+    (spot_website_comments_data[time_search_key] == time)].iloc[:, 0].size) for time in
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1283, in wrapper
+    res = na_op(values, other)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1143, in na_op
+    result = _comp_method_OBJECT_ARRAY(op, x, y)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1120, in _comp_method_OBJECT_ARRAY
+    result = libops.vec_compare(x, y, op)
+  File "pandas/_libs/ops.pyx", line 128, in pandas._libs.ops.vec_compare
+ValueError: Arrays were different lengths: 3419 vs 9
+[2018-10-17 14:33:04,522] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 18497
+[2018-10-17 14:33:18,759] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in post_spot_compard
+    list = [get_website_data(website,time_search_key,time_list) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in <listcomp>
+    list = [get_website_data(website,time_search_key,time_list) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in get_website_data
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in <listcomp>
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 18, in get_region_data
+    time_list];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 17, in <listcomp>
+    (spot_website_comments_data[time_search_key] == time)].iloc[:, 0].size) for time in
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1283, in wrapper
+    res = na_op(values, other)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1143, in na_op
+    result = _comp_method_OBJECT_ARRAY(op, x, y)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1120, in _comp_method_OBJECT_ARRAY
+    result = libops.vec_compare(x, y, op)
+  File "pandas/_libs/ops.pyx", line 128, in pandas._libs.ops.vec_compare
+ValueError: Arrays were different lengths: 3419 vs 9
+[2018-10-17 14:33:20,307] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 18497
+[2018-10-17 14:33:53,128] [INFO] This is an errormsg
+[2018-10-17 14:33:53,132] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-17 14:33:59,925] [INFO] This is an errormsg
+[2018-10-17 14:33:59,933] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-17 14:34:10,803] [INFO] This is an errormsg
+[2018-10-17 14:34:10,809] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-17 14:34:39,253] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 43, in post_spot_compard
+    body = json.loads(request.body);
+ValueError: Unexpected character found when decoding object value
+[2018-10-17 14:34:39,475] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 16932
+[2018-10-17 14:34:55,926] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 43, in post_spot_compard
+    body = json.loads(request.body);
+ValueError: Unexpected character found when decoding object value
+[2018-10-17 14:34:56,386] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 16933
+[2018-10-17 14:35:21,109] [INFO] "POST /api/spotcompared HTTP/1.1" 200 2492
+[2018-10-17 14:35:28,293] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in post_spot_compard
+    list = [get_website_data(website,time_search_key,time_list) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in <listcomp>
+    list = [get_website_data(website,time_search_key,time_list) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in get_website_data
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in <listcomp>
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 18, in get_region_data
+    time_list];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 17, in <listcomp>
+    (spot_website_comments_data[time_search_key] == time)].iloc[:, 0].size) for time in
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1283, in wrapper
+    res = na_op(values, other)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1143, in na_op
+    result = _comp_method_OBJECT_ARRAY(op, x, y)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1120, in _comp_method_OBJECT_ARRAY
+    result = libops.vec_compare(x, y, op)
+  File "pandas/_libs/ops.pyx", line 128, in pandas._libs.ops.vec_compare
+ValueError: Arrays were different lengths: 3419 vs 9
+[2018-10-17 14:35:29,458] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 18497
+[2018-10-17 14:35:43,571] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in post_spot_compard
+    list = [get_website_data(website,time_search_key,time_list) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in <listcomp>
+    list = [get_website_data(website,time_search_key,time_list) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in get_website_data
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in <listcomp>
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 18, in get_region_data
+    time_list];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 17, in <listcomp>
+    (spot_website_comments_data[time_search_key] == time)].iloc[:, 0].size) for time in
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1283, in wrapper
+    res = na_op(values, other)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1143, in na_op
+    result = _comp_method_OBJECT_ARRAY(op, x, y)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1120, in _comp_method_OBJECT_ARRAY
+    result = libops.vec_compare(x, y, op)
+  File "pandas/_libs/ops.pyx", line 128, in pandas._libs.ops.vec_compare
+ValueError: Arrays were different lengths: 3419 vs 9
+[2018-10-17 14:35:44,980] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 18497
+[2018-10-17 14:36:18,052] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in post_spot_compard
+    list = [get_website_data(website,time_search_key,time_list) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in <listcomp>
+    list = [get_website_data(website,time_search_key,time_list) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in get_website_data
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in <listcomp>
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 18, in get_region_data
+    time_list];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 17, in <listcomp>
+    (spot_website_comments_data[time_search_key] == time)].iloc[:, 0].size) for time in
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1283, in wrapper
+    res = na_op(values, other)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1143, in na_op
+    result = _comp_method_OBJECT_ARRAY(op, x, y)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1120, in _comp_method_OBJECT_ARRAY
+    result = libops.vec_compare(x, y, op)
+  File "pandas/_libs/ops.pyx", line 128, in pandas._libs.ops.vec_compare
+ValueError: Arrays were different lengths: 4136 vs 9
+[2018-10-17 14:36:19,208] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 18497
+[2018-10-17 14:36:27,495] [INFO] "POST /api/spotcompared HTTP/1.1" 200 1247
+[2018-10-17 14:40:06,180] [INFO] "POST /api/spotcompared HTTP/1.1" 200 301
+[2018-10-17 14:40:17,612] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in post_spot_compard
+    list = [get_website_data(website,time_search_key,time_list,search_keys) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in <listcomp>
+    list = [get_website_data(website,time_search_key,time_list,search_keys) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in get_website_data
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in <listcomp>
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 18, in get_region_data
+    time_list];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 17, in <listcomp>
+    (spot_website_comments_data[time_search_key] == time)].iloc[:, 0].size) for time in
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1283, in wrapper
+    res = na_op(values, other)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1143, in na_op
+    result = _comp_method_OBJECT_ARRAY(op, x, y)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1120, in _comp_method_OBJECT_ARRAY
+    result = libops.vec_compare(x, y, op)
+  File "pandas/_libs/ops.pyx", line 128, in pandas._libs.ops.vec_compare
+ValueError: Arrays were different lengths: 4136 vs 9
+[2018-10-17 14:40:18,991] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 18521
+[2018-10-17 14:40:30,277] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in post_spot_compard
+    list = [get_website_data(website,time_search_key,time_list,search_keys) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in <listcomp>
+    list = [get_website_data(website,time_search_key,time_list,search_keys) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in get_website_data
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in <listcomp>
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 18, in get_region_data
+    time_list];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 17, in <listcomp>
+    (spot_website_comments_data[time_search_key] == time)].iloc[:, 0].size) for time in
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1283, in wrapper
+    res = na_op(values, other)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1143, in na_op
+    result = _comp_method_OBJECT_ARRAY(op, x, y)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1120, in _comp_method_OBJECT_ARRAY
+    result = libops.vec_compare(x, y, op)
+  File "pandas/_libs/ops.pyx", line 128, in pandas._libs.ops.vec_compare
+ValueError: Arrays were different lengths: 4136 vs 9
+[2018-10-17 14:40:31,791] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 18521
+[2018-10-17 14:40:41,397] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in post_spot_compard
+    list = [get_website_data(website,time_search_key,time_list,search_keys) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in <listcomp>
+    list = [get_website_data(website,time_search_key,time_list,search_keys) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in get_website_data
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in <listcomp>
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 18, in get_region_data
+    time_list];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 17, in <listcomp>
+    (spot_website_comments_data[time_search_key] == time)].iloc[:, 0].size) for time in
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1283, in wrapper
+    res = na_op(values, other)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1143, in na_op
+    result = _comp_method_OBJECT_ARRAY(op, x, y)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1120, in _comp_method_OBJECT_ARRAY
+    result = libops.vec_compare(x, y, op)
+  File "pandas/_libs/ops.pyx", line 128, in pandas._libs.ops.vec_compare
+ValueError: Arrays were different lengths: 4136 vs 0
+[2018-10-17 14:40:42,904] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 18521
+[2018-10-17 14:41:56,992] [INFO] "POST /api/spotcompared HTTP/1.1" 200 301
+[2018-10-17 14:42:11,858] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in post_spot_compard
+    list = [get_website_data(website,time_search_key,time_list,search_keys) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in <listcomp>
+    list = [get_website_data(website,time_search_key,time_list,search_keys) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in get_website_data
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in <listcomp>
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 18, in get_region_data
+    time_list];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 17, in <listcomp>
+    (spot_website_comments_data[time_search_key] == time)].iloc[:, 0].size) for time in
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1283, in wrapper
+    res = na_op(values, other)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1143, in na_op
+    result = _comp_method_OBJECT_ARRAY(op, x, y)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1120, in _comp_method_OBJECT_ARRAY
+    result = libops.vec_compare(x, y, op)
+  File "pandas/_libs/ops.pyx", line 128, in pandas._libs.ops.vec_compare
+ValueError: Arrays were different lengths: 4136 vs 0
+[2018-10-17 14:42:13,131] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 18521
+[2018-10-17 14:43:11,443] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in post_spot_compard
+    list = [get_website_data(website,time_search_key,time_list,search_keys) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 73, in <listcomp>
+    list = [get_website_data(website,time_search_key,time_list,search_keys) for website in websites];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in get_website_data
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 32, in <listcomp>
+    yAxis = [get_region_data(website, region, time_search_key, time_list) for region in search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 18, in get_region_data
+    time_list];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 17, in <listcomp>
+    (spot_website_comments_data[time_search_key] == time)].iloc[:, 0].size) for time in
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1283, in wrapper
+    res = na_op(values, other)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1143, in na_op
+    result = _comp_method_OBJECT_ARRAY(op, x, y)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\ops.py", line 1120, in _comp_method_OBJECT_ARRAY
+    result = libops.vec_compare(x, y, op)
+  File "pandas/_libs/ops.pyx", line 128, in pandas._libs.ops.vec_compare
+ValueError: Arrays were different lengths: 4136 vs 0
+[2018-10-17 14:43:12,776] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 18521
+[2018-10-17 14:46:46,738] [INFO] "POST /api/spotcompared HTTP/1.1" 200 317
+[2018-10-17 14:47:03,137] [INFO] "POST /api/spotcompared HTTP/1.1" 200 709
+[2018-10-17 14:48:11,343] [INFO] "POST /api/spotcompared HTTP/1.1" 200 4476
+[2018-10-17 14:49:14,961] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 94, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 43, in post_spot_compard
+    body = json.loads(request.body);
+ValueError: Expected object or value
+[2018-10-17 14:49:15,131] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 16875
+[2018-10-17 14:51:11,358] [INFO] "POST /api/spotcompared HTTP/1.1" 200 18458
+[2018-10-17 14:52:07,498] [INFO] "POST /api/spotcompared HTTP/1.1" 200 18458
+[2018-10-17 14:52:38,951] [INFO] "POST /api/spotcompared HTTP/1.1" 200 11467
+[2018-10-17 14:53:00,406] [INFO] "POST /api/spotcompared HTTP/1.1" 200 7074
+[2018-10-17 14:53:12,010] [INFO] "POST /api/spotcompared HTTP/1.1" 200 7074
+[2018-10-17 14:53:59,502] [INFO] "POST /api/spotcompared HTTP/1.1" 200 5342
+[2018-10-17 14:54:14,346] [INFO] "POST /api/spotcompared HTTP/1.1" 200 3095
+[2018-10-17 14:54:24,337] [INFO] "POST /api/spotcompared HTTP/1.1" 200 1622
+[2018-10-17 15:28:05,048] [INFO] "POST /api/spotcompared HTTP/1.1" 200 1186
+[2018-10-17 15:41:20,913] [WARNING] "POST /api/spotcompared HTTP/1.1" 401 58
+[2018-10-17 15:45:03,652] [INFO] "POST /api/spotcompared HTTP/1.1" 200 1186
+[2018-10-17 15:52:40,669] [INFO] "POST /api/spotcompared HTTP/1.1" 200 1186
+[2018-10-17 16:00:21,772] [INFO] "POST /api/spotcompared HTTP/1.1" 200 1198
+[2018-10-17 16:05:20,433] [INFO] "POST /api/spotcompared HTTP/1.1" 200 1198
+[2018-10-17 16:11:21,330] [INFO] "POST /api/spotcompared HTTP/1.1" 200 1382
+[2018-10-17 16:14:39,261] [INFO] "POST /api/spotcompared HTTP/1.1" 200 1622
+[2018-10-17 16:14:53,324] [INFO] "POST /api/spotcompared HTTP/1.1" 200 1778
+[2018-10-17 16:15:14,837] [INFO] "POST /api/spotcompared HTTP/1.1" 200 1002
+[2018-10-17 16:16:40,494] [WARNING] Not Found: /api/spodetail/1
+[2018-10-17 16:16:40,498] [WARNING] "GET /api/spodetail/1 HTTP/1.1" 404 2924
+[2018-10-17 16:18:00,567] [INFO] "GET /api/spotdetail/1 HTTP/1.1" 200 401
+[2018-10-17 16:18:02,636] [INFO] "GET /api/spotdetail/1 HTTP/1.1" 200 401
+[2018-10-17 16:18:18,132] [INFO] "GET /api/spotlist HTTP/1.1" 200 3193
+[2018-10-17 16:18:21,980] [INFO] "GET /api/qdhspotlist HTTP/1.1" 200 3677
+[2018-10-17 16:18:50,081] [INFO] "GET /api/spotdetail/1 HTTP/1.1" 200 401
+[2018-10-17 16:19:15,405] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 545
+[2018-10-17 16:19:20,373] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 545
+[2018-10-17 16:19:52,339] [INFO] "GET /api/spotdetail/3 HTTP/1.1" 200 534
+[2018-10-17 16:39:58,374] [ERROR] Internal Server Error: /api/spotdetail/2
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 75, in get
+    return get_spot_detail(request,id);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 39, in get_spot_detail
+    (comments_data['search_key'] == spot) & (comments_data['comment_month'] == nowMonth)];
+NameError: name 'nowMonth' is not defined
+[2018-10-17 16:39:58,845] [ERROR] "GET /api/spotdetail/2 HTTP/1.1" 500 95745
+[2018-10-17 16:41:15,860] [ERROR] Internal Server Error: /api/spotdetail/2
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 75, in get
+    return get_spot_detail(request,id);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 48, in get_spot_detail
+    num_axis,score_axis = [get_region_data(region,time_list) for region in spot_search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 48, in <listcomp>
+    num_axis,score_axis = [get_region_data(region,time_list) for region in spot_search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 19, in get_region_data
+    num_cnts,score_cnts = [get_time_data(spot_comment_data,time) for time in time_list];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 19, in <listcomp>
+    num_cnts,score_cnts = [get_time_data(spot_comment_data,time) for time in time_list];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 10, in get_time_data
+    return spot_time_comment_data.iloc[:,0].size,get_score(spot_time_comment_data['comment_score'].mean);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\CommonView.py", line 100, in get_score
+    return round(score,1);
+TypeError: type method doesn't define __round__ method
+[2018-10-17 16:41:17,382] [ERROR] "GET /api/spotdetail/2 HTTP/1.1" 500 137379
+[2018-10-17 16:43:03,698] [ERROR] Internal Server Error: /api/spotdetail/2
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 75, in get
+    return get_spot_detail(request,id);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 48, in get_spot_detail
+    num_axis,score_axis = [get_region_data(region,time_list) for region in spot_search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 48, in <listcomp>
+    num_axis,score_axis = [get_region_data(region,time_list) for region in spot_search_keys];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 19, in get_region_data
+    num_cnts,score_cnts = [get_time_data(spot_comment_data,time) for time in time_list];
+ValueError: too many values to unpack (expected 2)
+[2018-10-17 16:43:05,404] [ERROR] "GET /api/spotdetail/2 HTTP/1.1" 500 113381
+[2018-10-17 16:48:49,492] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 545
+[2018-10-17 16:49:02,310] [INFO] "GET /api/spotdetail/1 HTTP/1.1" 200 401
+[2018-10-17 16:49:19,674] [INFO] "GET /api/spotdetail/6 HTTP/1.1" 200 534

@@ -108,8 +108,8 @@ from mongoengine import connect
 connect(db='dspider2',
     username='lab421',
     password='lab421_1',
-    host='10.1.17.25',
-port = 27517,
+    host='localhost',
+port = 28117,
         authentication_source='admin'); # 连接的数据库名称
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -146,19 +146,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 # django-rest-framework设置
-REST_FRAMEWORK = {
-    'PAGE_SIZE': 10,
-
-    # 设置所有接口都需要被验证
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.BasicAuthentication',
-    ),
-}
+# REST_FRAMEWORK = {
+#     'PAGE_SIZE': 10,
+#
+#     # 设置所有接口都需要被验证
+#     'DEFAULT_PERMISSION_CLASSES': (
+#         'rest_framework.permissions.IsAuthenticated',
+#     ),
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+#         'rest_framework.authentication.SessionAuthentication',
+#         'rest_framework.authentication.BasicAuthentication',
+#     ),
+# }
 STATIC_URL = '/static/'
 #跨域增加忽略
 CORS_ALLOW_CREDENTIALS = True

@@ -5,8 +5,10 @@ import json
 from django.http import HttpResponse
 from rest_framework_jwt.utils import jwt_decode_handler
 import re,logging
-from ..Models.ＣonnectToDBModel import *
-#公用的一些方法
+
+import numpy as np;
+from ..Models.ConnectToDBModel import *
+#编码为json
 def response_as_json(data, foreign_penetrate=False):
     # 防止中文转化为unicode编码
     jsonString =  pd.io.json.dumps(data, ensure_ascii=False)
@@ -16,10 +18,10 @@ def response_as_json(data, foreign_penetrate=False):
     )
     response["Access-Control-Allow-Origin"] = "*"
     response["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS"
-    response["Access-Control-Max-Age"] = "1000"
+    #response["Access-Control-Max-Age"] = "1000"
     response["Access-Control-Allow-Headers"] = "*"
     return response
-
+#错误返回
 def json_error(error_string="", code=500, **kwargs):
     data = {
         "code": code,
@@ -89,4 +91,11 @@ def get_rank(key):
     for i,region in enumerate(total_search_keys):
         if(region['search_key'] == key):
             return str(i + 1);
+
+#获取平均分，为np.nan的时候返回0
+def get_score(score):
+    if score is np.nan:
+        return 0;
+    else:
+       return round(score,1);
 

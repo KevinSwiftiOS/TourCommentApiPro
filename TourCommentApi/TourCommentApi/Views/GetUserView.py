@@ -1,11 +1,5 @@
 from rest_framework.views import APIView
-
 from .CommonView import *
-
-from ..Models.CommentModel import comment
-from ..Models.InnerRegionInfoModel import innerregioninfo
-from ..Models.ＣonnectToDBModel import *
-import datetime
 def get_user(request):
     # 进行解码token
     # username = decodeToken(request);

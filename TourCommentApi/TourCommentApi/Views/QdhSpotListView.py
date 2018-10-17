@@ -1,40 +1,44 @@
 from rest_framework.views import APIView
-
-from .CommonView import *
-
-from ..Models.CommentModel import comment
-from ..Models.InnerRegionInfoModel import innerregioninfo
-from ..Models.ＣonnectToDBModel import *
 import datetime
+
+from ..Models.InnerRegionInfoModel import innerregioninfo
+from ..Models.ConnectToDBModel import *
+from .CommonView import *
+#获取一个景区的 随后进行迭代
+def get_one_qdh_spot(inner_region,qdh_comment_data):
+
+    data = {};
+    data['id'] = inner_region.id;
+    data['name'] = inner_region.name;
+    data['address'] = inner_region.address;
+    data['lng'] = inner_region.lng;
+    data['lat'] = inner_region.lat;
+    # 进行搜索
+
+    qdh_one_spot_comment_data = qdh_comment_data[qdh_comment_data['shop_name_search_key'] == str(inner_region.search_key)];
+
+
+    data['commentNumber'] = qdh_one_spot_comment_data.iloc[:, 0].size;
+    data['commentScore'] = get_score(qdh_one_spot_comment_data['comment_score'].mean());
+    return data;
+
 def get_qdh_spot_list(request):
     # 进行解码token
     # username = decodeToken(request);
     # print(username);
-    res = {};
-    list = [];
-    #增加本月评分和评论数量
-    nowMOnth = str(datetime.datetime.now().year) + '-' + str(datetime.datetime.now().month).zfill(2);
-
-    jq_comment_data = comments_data[
-        (comments_data['search_key'] == '千岛湖') & (comments_data['comment_month'] == nowMOnth)];
-
-    allComments = comment.objects();
     try:
-        for region in innerregioninfo.objects:
-            data = {};
-            data['id'] = region.id;
-            data['name'] = region.name;
-            data['address'] = region.address;
-            data['lng'] = region.lng;
-            data['lat'] = region.lat;
-            # 进行搜索
-            comments = allComments(shop_name__contains=region.search_key);
-            data['commentNumber'] = comments.count();
-            data['commentScore'] = round(comments.average('comment_score'), 1);
-            list.append(data);
-        # 返回所有的文档对象列表
-        res['monthCommentNumber'] = jq_comment_data.iloc[:, 0].size;
-        res['monthCommentScore'] = round(jq_comment_data['comment_score'].mean(), 1);
+        res = {};
+
+        #增加本月评分和评论数量
+        now_month = str(datetime.datetime.now().year) + '-' + str(datetime.datetime.now().month).zfill(2);
+
+        qdh_comment_data = comments_data[
+            (comments_data['search_key'] == '千岛湖') & (comments_data['comment_month'] == now_month)];
+
+
+        list = [get_one_qdh_spot(inner_region,qdh_comment_data) for inner_region in innerregioninfo.objects];
+            # 返回所有的文档对象列表
+
         res['list'] = list;
         return json_response(res);
     except Exception:

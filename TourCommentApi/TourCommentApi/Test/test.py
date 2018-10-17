@@ -20,19 +20,27 @@ class regioninfo(Document):
     lat = FloatField(required=True)
     search_key = StringField(required=True)
 
-
+def return2Value(i):
+    return 1,i + 1;
 if __name__ == '__main__':
-    dict = [
-        {'id': '4', 'name': 'b'},
-        {'id': '6', 'name': 'c'},
-        {'id': '3', 'name': 'a'},
-        {'id': '1', 'name': 'g'},
-        {'id': '8', 'name': 'f'}
-    ]
-    dict = sorted(dict, key=lambda x: x['id'],reverse=True)
-    for(i,j) in enumerate(dict):
-        print(i,j);
-        print(j['name']);
+    x = 4
+    a = [1,2,3,4];
+
+    b = ([return2Value(i) for i in a]);
+    print(type(b));
+
+
+    # dict = [
+    #     {'id': '4', 'name': 'b'},
+    #     {'id': '6', 'name': 'c'},
+    #     {'id': '3', 'name': 'a'},
+    #     {'id': '1', 'name': 'g'},
+    #     {'id': '8', 'name': 'f'}
+    # ]
+    # dict = sorted(dict, key=lambda x: x['id'],reverse=True)
+    # for(i,j) in enumerate(dict):
+    #     print(i,j);
+    #     print(j['name']);
     # regionInfos = regioninfo.objects.get(id = '1');
    # print(regionInfos.search_key);
    # time = '2018-09-10';
