@@ -50,45 +50,50 @@ def decodeToken(request):
 
 
 #获取时间颗粒度
-def get_time_list(startTime,endTime,type):
+def get_time_list(startTime,endTime,time):
     start_year = int(startTime.split('-')[0]);
     start_date = int(startTime.split('-')[1]);
     end_year = int(endTime.split('-')[0]);
     end_date = int(endTime.split('-')[1]);
-    #截止时间 月截止到13 季度截止到5 方便后面一个遍历
-    if(type == '月'):
-        end_time = 13;
-    elif(type == '季度'):
-        end_time = 5;
+    #截止时间 月截止到13 季度截止到5 周截止到53 方便后面一个遍历
+    end_time_keys = {
+        '月':13,
+        '季度':5,
+        '周':53
+    };
+    end_time = end_time_keys[time];
+
     time_list = [];
-
+    #排序不是年份
+    if(time != '年'):
     # 开始结束年份不同 需将月份加上
-    if (start_year < end_year):
-        first = True;
-        for year in range(start_year, end_year + 1):
-            if (year != end_year):
-                if (first):
-                    first = False;
-                    for month in range(start_date, end_time):
-                        time_list.append(str(year) + '-' + str(month).zfill(2));
+        if (start_year < end_year):
+            first = True;
+            for year in range(start_year, end_year + 1):
+                if (year != end_year):
+                    if (first):
+                        first = False;
+                        for month in range(start_date, end_time):
+                            time_list.append(str(year) + '-' + str(month).zfill(2));
+                    else:
+                        for month in range(1, end_time):
+                            time_list.append(str(year) + '-' + str(month).zfill(2));
                 else:
-                    for month in range(1, end_time):
+                    for month in range(1, end_date + 1):
                         time_list.append(str(year) + '-' + str(month).zfill(2));
-            else:
-                for month in range(1, end_date + 1):
-                    time_list.append(str(year) + '-' + str(month).zfill(2));
-    # 开始结束年份相同 只需遍历日期即可
+        # 开始结束年份相同 只需遍历日期即可
+        else:
+            for month in range(start_date, end_date + 1):
+                time_list.append(str(start_year) + '-' + str(month).zfill(2));
     else:
-        for month in range(start_date, end_date + 1):
-            time_list.append(str(start_year) + '-' + str(month).zfill(2));
-
+        time_list = [str(year) for year in range(start_year,end_year + 1)];
 
     return time_list;
 
 
 #获取排名
 def get_rank(key):
-    for i,region in enumerate(total_search_keys):
+    for i,region in enumerate(spot_ranks):
         if(region['search_key'] == key):
             return str(i + 1);
 

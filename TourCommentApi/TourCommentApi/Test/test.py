@@ -28,8 +28,11 @@ if __name__ == '__main__':
 
     b = ([return2Value(i) for i in a]);
     print(type(b));
-
-
+    time = '2018-09-03';
+    t = time.split('-');
+    print((datetime.date(int(t[0]),int(t[1]),int(t[2])).isocalendar())[1]);
+    print(11111);
+    print(a[-1]);
     # dict = [
     #     {'id': '4', 'name': 'b'},
     #     {'id': '6', 'name': 'c'},

@@ -108,7 +108,7 @@ from mongoengine import connect
 connect(db='dspider2',
     username='lab421',
     password='lab421_1',
-    host='localhost',
+    host='120.55.59.187',
 port = 28117,
         authentication_source='admin'); # 连接的数据库名称
 # Password validation
