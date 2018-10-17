@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """TourCommentApi URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -24,36 +25,40 @@ from rest_framework_jwt.views import verify_jwt_token
 
 from rest_framework.routers import DefaultRouter
 
-from apscheduler.scheduler import Scheduler
 
 import time
-
 
 
 
 from .Views.LoginView import login
 
 
-from .Views.JingquListView import JingquListView
-from .Views.JingdianListView import JingdianListView
-from .Views.JingquCountView import JingquCountView
-from .Views.jingquDetailView import JingquDetailView
-from .Views.JingquDymanicCommentView import jingquDymanicCommentView
-from .Views.SpotNumComparedView import SpotNumComparedView
+from .Views.SpotListView import SpotListView
+from .Views.QdhSpotListView import QdhSpotListView
+from .Views.SpotDetailView import SpotDetailView
+# from .Views.jingquDetailView import JingquDetailView
+# from .Views.JingquDymanicCommentView import jingquDymanicCommentView
+from .Views.SpotComparedView import SpotComparedView
+from .Views.QdhStateView import QdhStateView
+from .Views.GetUserView import GetUserView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^docs/', get_schema_view()),
     #登录接口
     url(r'^api/login$',login),
     #首页获取全部信息接口
-    url(r'^api/jingqulist', JingquListView.as_view()),
+    url(r'^api/spotlist', SpotListView.as_view()),
     #获取景点详情
-    url(r'^api/jingdianlist/(?P<id>[0-9A-Fa-f-]+)', JingdianListView.as_view()),
+    url(r'^api/qdhspotlist', QdhSpotListView.as_view()),
     #获取景区的统计数目  首页————某某其余5A级景区
-    url(r'^api/jingqucount/(?P<id>[0-9A-Fa-f-]+)', JingquCountView.as_view()),
+    url(r'^api/spotdetail/(?P<id>[0-9A-Fa-f-]+)', SpotDetailView.as_view()),
      #景区的详细分析
-    url(r'^api/jingqudetail/(?P<id>[0-9A-Fa-f-]+)', JingquDetailView.as_view()),
-    #景区动态页面
-    url(r'^api/spotnumcompared', SpotNumComparedView.as_view()),
+    # url(r'^api/jingqudetail/(?P<id>[0-9A-Fa-f-]+)', JingquDetailView.as_view()),
+    #千岛湖景区与其余景区进行比较　评论数
+    url(r'^api/spotcompared', SpotComparedView.as_view()),
+    # 千岛湖景区动态
+    url(r'^api/qdhstate', QdhStateView.as_view()),
+    # 获取用户个人信息
+    url(r'^api/getuser', GetUserView.as_view()),
 ]
 

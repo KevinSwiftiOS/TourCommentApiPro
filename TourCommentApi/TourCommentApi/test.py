@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
 from mongoengine import  *
 import datetime
 import re
+# from .Models.RegionInfoModel import *;
 connect(db='dspider2',
     username='lab421',
     password='lab421_1',
@@ -9,22 +11,32 @@ port = 28117,
         authentication_source='admin');
 
 
-class comment(Document):
-    data_website = StringField(required=True)
-    data_region = StringField(required=True)
-    data_source = StringField(required=True)
-    comment_user_name = StringField(required=True)
-    shop_name = StringField(required=True)
-    comment_content = StringField(required=True)
-    comment_time = StringField(required=True)
-    comment_score = FloatField(required=True)
-    comment_month = StringField(required=True)
-    comment_season = StringField(required=True)
-    crawl_time = DateTimeField(required=True)
+class regioninfo(Document):
+    _id = BinaryField(required=True)
+    id = StringField(required=True)
+    address = StringField(required=True)
+    name = StringField(required=True)
+    lng = FloatField(required=True)
+    lat = FloatField(required=True)
+    search_key = StringField(required=True)
 
 
 if __name__ == '__main__':
-   # regionInfos = regioninfo.objects(name__contains = '千岛湖');
+    dict = [
+        {'id': '4', 'name': 'b'},
+        {'id': '6', 'name': 'c'},
+        {'id': '3', 'name': 'a'},
+        {'id': '1', 'name': 'g'},
+        {'id': '8', 'name': 'f'}
+    ]
+    dict = sorted(dict, key=lambda x: x['id'],reverse=True)
+    for(i,j) in enumerate(dict):
+        print(i,j);
+        print(j['name']);
+    # regionInfos = regioninfo.objects.get(id = '1');
+   # print(regionInfos.search_key);
+   # time = '2018-09-10';
+   # print(time[0:4]);
    # print(regionInfos.get().name);
    # print(regionInfos.count());
    #进行时间的分割
@@ -98,30 +110,30 @@ if __name__ == '__main__':
    #
    #     list.append(websiteRes);
    #     print(list);
-   sql = {
-       'data_website':'去哪儿',
-       'comment_month':'2018-09',
-   }
-   sql1 = {
-       'data_website':'携程'
-   }
-   # comments = comment.objects(Q(__raw__=sql) | Q(__raw__ = sql1))
-   # for comment in comments:
-   #     print(comment.data_website);
-   # print(comments.count())
-   # region_comment = comments(data_region__contains = '千岛湖')
-   # print(region_comment.count())
-
-def aaaa(s):
-        print(1);
-        return s + 1;
-def set1():
-    print(222);
-
-    a = [aaaa(i) for i in range(0,5)]
-    print(a);
-
-set1();
+#    sql = {
+#        'data_website':'去哪儿',
+#        'comment_month':'2018-09',
+#    }
+#    sql1 = {
+#        'data_website':'携程'
+#    }
+#    # comments = comment.objects(Q(__raw__=sql) | Q(__raw__ = sql1))
+#    # for comment in comments:
+#    #     print(comment.data_website);
+#    # print(comments.count())
+#    # region_comment = comments(data_region__contains = '千岛湖')
+#    # print(region_comment.count())
+#
+# def aaaa(s):
+#         print(1);
+#         return s + 1;
+# def set1():
+#     print(222);
+#
+#     a = [aaaa(i) for i in range(0,5)]
+#     print(a);
+#
+# set1();
 
    # for region in regioninfo.objects:
    #     print(region.name)

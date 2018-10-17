@@ -1,13 +1,15 @@
 
-
+# -*- coding: utf-8 -*-
+import pandas as pd
 import json
 from django.http import HttpResponse
 from rest_framework_jwt.utils import jwt_decode_handler
 import re,logging
+from ..Models.ＣonnectToDBModel import *
 #公用的一些方法
 def response_as_json(data, foreign_penetrate=False):
     # 防止中文转化为unicode编码
-    jsonString = json.dumps(data, ensure_ascii=False)
+    jsonString =  pd.io.json.dumps(data, ensure_ascii=False)
     response = HttpResponse(
         jsonString,
         content_type='application/json'
@@ -80,3 +82,11 @@ def get_time_list(startTime,endTime,type):
 
 
     return time_list;
+
+
+#获取排名
+def get_rank(key):
+    for i,region in enumerate(total_search_keys):
+        if(region['search_key'] == key):
+            return str(i + 1);
+
