@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from rest_framework.views import APIView
 import datetime
-
+from ..Statics.Websites import *
 from ..Models.RegionInfoModel import regioninfo
 from ..Models.ConnectToDBModel import *
 from .CommonView import *
@@ -14,50 +14,46 @@ def get_data(comments_data,isNum):
 
 
 #获取一个景区上的
-def get_region_data(website,spot,time_search_key,time_list,is_num):
+def get_website_data(website, spot, time_search_key,compared_time,is_num):
 
-    region_res = {};
+
     # 一个景区在平台上的评论
     spot_website_comments_data = region_website_spot_dic[spot + ('_') + (website) + ("_景点")];
 
-    cnts = [get_data(spot_website_comments_data[
-                (spot_website_comments_data[time_search_key] == time)],is_num) for time in
-            time_list];
+    cnts = get_data(spot_website_comments_data[
+                (spot_website_comments_data[time_search_key] == compared_time)],is_num);
 
-    region_res['name'] = spot;
-    region_res['data'] = cnts;
-    return region_res;
+
+    return cnts;
 
 #获取一个网站上的
-def get_website_data(website,time_search_key, time_list,spots,is_num):
+def get_spot_data(spot,time_search_key,compared_time,is_num):
 
-    website_res = {};
+    spot_res = {};
     # 时间颗粒度的获取
 
     # 在时间颗粒度中进行遍历
     #字段含义 网站 景区 时间搜索颗粒度 时间区间 统计评分或者数量
-    yAxis = [get_region_data(website, spot, time_search_key, time_list,is_num) for spot in spots];
-    website_res['website'] = website;
-    website_res['xAxis'] = time_list;
-    website_res['yAxis'] = yAxis;
-    return website_res;
+    spot_res['data'] = [get_website_data(website, spot, time_search_key,compared_time,is_num) for website in websites];
+
+    spot_res['name'] = spot;
+    return spot_res;
 
 
 #获取景区比较
-def post_spot_compard(request):
+def post_spot_detail_compard(request):
 
     #post中拿到景区列表 和开始结束时间
     body = json.loads(request.body);
-    spots = (body['spots']);
-    #后台默认加上千岛湖
-    spots.append('千岛湖');
+    id = (body['id']);
 
-    start_time = body['startTime'];
+    #从数据库中抽取
+    spots = [(regioninfo.objects.get(id = str(id))).search_key];
 
-    end_time = body['endTime'];
-
-    websites = (body['websites']);
-
+    if(id != '1'):
+        spots.append('千岛湖');
+    #景区的比较时间
+    compared_time = (body['compared_time']);
     #是评论数量还是评分
     is_num = body['type'];
 
@@ -72,15 +68,14 @@ def post_spot_compard(request):
         '周':'comment_week'
     };
 
-    time_list = get_time_list(start_time,end_time,time);
         #外面一层平台遍历 里面一层景区遍历
 
     res = {};
 
     #字段含义 网站 时间搜索颗粒度 时间跨度 景区搜索关键字 统计评分还是数量
-    list = [get_website_data(website,time_search_keys[time],time_list,spots,is_num) for website in websites];
+    res['yAxis'] = [get_spot_data(spot,time_search_keys[time],compared_time,is_num) for spot in spots];
+    res['xAxis'] = websites;
 
-    res['list'] = list;
     return json_response(res);
 
 
@@ -94,11 +89,11 @@ def post_spot_compard(request):
 
 
 #千岛湖与其余景区同时段评论数量比较
-class SpotComparedView(APIView):
+class SpotDetailComparedView(APIView):
 
     def post(self, request, *args, **kwargs):
         try:
 
-            return post_spot_compard(request);
+            return post_spot_detail_compard(request);
         except KeyError:
             return json_error(error_string="请求错误", code=500);

@@ -12,7 +12,7 @@ def get_qdh_state(request):
     qdh_comment_data = comments_data[
         (comments_data['search_key'] == '千岛湖') & (comments_data['comment_month'] == now_month)];
     res['monthCommentNumber'] = qdh_comment_data.iloc[:, 0].size;
-    res['monthCommentScore'] = round(qdh_comment_data['comment_score'].mean(), 1);
+    res['monthCommentScore'] = get_score(qdh_comment_data['comment_score'].mean());
     #景区排名还未写
     res['rank'] = get_rank('千岛湖');
     return json_response(res);

@@ -36,8 +36,7 @@ from .Views.LoginView import login
 from .Views.SpotListView import SpotListView
 from .Views.QdhSpotListView import QdhSpotListView
 from .Views.SpotDetailView import SpotDetailView
-# from .Views.jingquDetailView import JingquDetailView
-# from .Views.JingquDymanicCommentView import jingquDymanicCommentView
+from .Views.SpotDetailComparedView import SpotDetailComparedView
 from .Views.SpotComparedView import SpotComparedView
 from .Views.QdhStateView import QdhStateView
 from .Views.GetUserView import GetUserView
@@ -56,9 +55,12 @@ urlpatterns = [
     # url(r'^api/jingqudetail/(?P<id>[0-9A-Fa-f-]+)', JingquDetailView.as_view()),
     #千岛湖景区与其余景区进行比较　评论数
     url(r'^api/spotcompared', SpotComparedView.as_view()),
+    #千岛湖景区详情与其余进行皮角
+    url(r'^api/spotdetailcompared',SpotDetailComparedView.as_view()),
     # 千岛湖景区动态
     url(r'^api/qdhstate', QdhStateView.as_view()),
     # 获取用户个人信息
     url(r'^api/getuser', GetUserView.as_view()),
+
 ]
 

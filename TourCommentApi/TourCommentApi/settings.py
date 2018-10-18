@@ -108,9 +108,14 @@ from mongoengine import connect
 connect(db='dspider2',
     username='lab421',
     password='lab421_1',
-    host='120.55.59.187',
+    host='127.0.0.1',
 port = 28117,
-        authentication_source='admin'); # 连接的数据库名称
+       authentication_source='admin'); # 连接的数据库名称
+# connect(db='dspider2',
+#
+#     host='localhost',
+# port = 27017,
+#       );
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 

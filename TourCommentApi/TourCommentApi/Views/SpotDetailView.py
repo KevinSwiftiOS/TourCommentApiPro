@@ -15,13 +15,13 @@ def get_spot_detail(request,id):
     #若当前景区不是千岛湖 需要加上千岛湖
     if(id != '1'):
         spots.append('千岛湖');
-    if(datetime.datetime.now() < 6):
+    if(int(datetime.datetime.now().month) < 4):
         #返回第几周
-        now_date = str(datetime.datetime.now().year).join('-16');
+        now_date = str(datetime.datetime.now().year) + '-' + str((datetime.datetime.now().isocalendar())[1]).zfill(2);
         time = '周';
         time_search_key = 'comment_week';
     else:
-        now_date = str(datetime.datetime.now().year).join('-').join(str(datetime.datetime.now().month).zfill(2));
+        now_date = str(datetime.datetime.now().year) + '-' + (str(datetime.datetime.now().month).zfill(2));
         time = '月';
         time_search_key = 'comment_month';
 
@@ -46,6 +46,7 @@ def get_spot_detail(request,id):
     res['rank'] = get_rank(curr_spot);
     #返回时间区间和时间颗粒度
     res['endTime'] = time_list[-1];
+    res['startTime'] = time_list[0];
     res['time'] = time;
     for j, spot in enumerate(spots):
         num_region_res = {};
@@ -58,10 +59,10 @@ def get_spot_detail(request,id):
             spot_comments_data = comments_data[
                 (comments_data['search_key'] == spot) & (comments_data[time_search_key] == time)];
             num_cnts.append(spot_comments_data.iloc[:, 0].size);
-            score_cnts.append(round(spot_comments_data['comment_score'].mean(),1));
-        num_region_res['name'] = region;
+            score_cnts.append(get_score((spot_comments_data['comment_score'].mean())));
+        num_region_res['name'] = spot;
         num_region_res['data'] = num_cnts;
-        score_region_res['name'] = region;
+        score_region_res['name'] = spot;
         score_region_res['data'] = score_cnts;
         numAxis.append(num_region_res);
         scoreAxis.append(score_region_res);

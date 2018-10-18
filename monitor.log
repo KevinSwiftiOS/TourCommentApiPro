@@ -1845,3 +1845,618 @@ ValueError: too many values to unpack (expected 2)
 [2018-10-17 16:48:49,492] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 545
 [2018-10-17 16:49:02,310] [INFO] "GET /api/spotdetail/1 HTTP/1.1" 200 401
 [2018-10-17 16:49:19,674] [INFO] "GET /api/spotdetail/6 HTTP/1.1" 200 534
+[2018-10-18 09:13:36,945] [INFO] "POST /api/spotcompared HTTP/1.1" 200 570
+[2018-10-18 09:14:16,485] [INFO] This is an errormsg
+[2018-10-18 09:14:16,490] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-18 09:14:46,302] [INFO] "POST /api/spotcompared HTTP/1.1" 200 514
+[2018-10-18 09:57:08,249] [INFO] "POST /api/spotcompared HTTP/1.1" 200 522
+[2018-10-18 09:57:31,880] [INFO] "POST /api/spotcompared HTTP/1.1" 200 524
+[2018-10-18 10:06:09,467] [INFO] "POST /api/spotcompared HTTP/1.1" 200 524
+[2018-10-18 10:07:13,085] [INFO] "POST /api/spotcompared HTTP/1.1" 200 302
+[2018-10-18 10:07:36,623] [INFO] "POST /api/spotcompared HTTP/1.1" 200 300
+[2018-10-18 10:15:18,445] [INFO] "POST /api/spotcompared HTTP/1.1" 200 300
+[2018-10-18 10:29:34,540] [INFO] "POST /api/spotcompared HTTP/1.1" 200 291
+[2018-10-18 10:30:29,929] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 104, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 52, in post_spot_compard
+    body = json.loads(request.body);
+ValueError: Unexpected character found when decoding array value (2)
+[2018-10-18 10:30:30,396] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 16940
+[2018-10-18 10:30:39,877] [INFO] "POST /api/spotcompared HTTP/1.1" 200 167
+[2018-10-18 10:30:52,770] [INFO] "POST /api/spotcompared HTTP/1.1" 200 169
+[2018-10-18 10:35:29,440] [INFO] "POST /api/spotcompared HTTP/1.1" 200 183
+[2018-10-18 10:40:03,570] [INFO] "POST /api/spotcompared HTTP/1.1" 200 187
+[2018-10-18 10:40:19,675] [INFO] "POST /api/spotcompared HTTP/1.1" 200 172
+[2018-10-18 10:40:35,862] [INFO] "POST /api/spotcompared HTTP/1.1" 200 188
+[2018-10-18 10:40:56,458] [INFO] "POST /api/spotcompared HTTP/1.1" 200 220
+[2018-10-18 10:41:32,949] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 104, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 76, in post_spot_compard
+    time_list = get_time_list(start_time,end_time,time);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\CommonView.py", line 55, in get_time_list
+    start_date = int(startTime.split('-')[1]);
+IndexError: list index out of range
+[2018-10-18 10:41:33,216] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 17057
+[2018-10-18 10:41:47,282] [INFO] This is an errormsg
+[2018-10-18 10:41:47,285] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-18 10:42:02,304] [INFO] This is an errormsg
+[2018-10-18 10:42:02,308] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-18 10:43:56,049] [INFO] This is an errormsg
+[2018-10-18 10:43:56,056] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-10-18 10:46:16,810] [INFO] "POST /api/spotcompared HTTP/1.1" 200 163
+[2018-10-18 10:49:24,420] [INFO] "POST /api/spotcompared HTTP/1.1" 200 173
+[2018-10-18 10:49:34,413] [INFO] "POST /api/spotcompared HTTP/1.1" 200 1014
+[2018-10-18 10:50:03,490] [INFO] "POST /api/spotcompared HTTP/1.1" 200 172
+[2018-10-18 10:50:14,956] [INFO] "POST /api/spotcompared HTTP/1.1" 200 175
+[2018-10-18 10:50:25,449] [INFO] "POST /api/spotcompared HTTP/1.1" 200 153
+[2018-10-18 10:50:38,144] [INFO] "POST /api/spotcompared HTTP/1.1" 200 169
+[2018-10-18 10:50:56,849] [INFO] "POST /api/spotcompared HTTP/1.1" 200 229
+[2018-10-18 10:51:03,817] [INFO] "POST /api/spotcompared HTTP/1.1" 200 237
+[2018-10-18 11:16:32,830] [INFO] This is an errormsg
+[2018-10-18 11:16:32,833] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 47
+[2018-10-18 11:17:24,319] [INFO] This is an errormsg
+[2018-10-18 11:17:24,323] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 47
+[2018-10-18 11:17:44,392] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 416
+[2018-10-18 11:19:10,781] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 416
+[2018-10-18 11:20:24,307] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 416
+[2018-10-18 11:20:37,919] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 417
+[2018-10-18 11:33:52,287] [ERROR] Internal Server Error: /api/spotdetailcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 92, in post
+    return post_spot_detail_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 71, in post_spot_detail_compard
+    res['yAxis'] = [get_spot_data(spot,time_search_keys[time],compared_time,is_num) for spot in spots];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 71, in <listcomp>
+    res['yAxis'] = [get_spot_data(spot,time_search_keys[time],compared_time,is_num) for spot in spots];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 38, in get_spot_data
+    spot['data'] = [get_website_data(website, spot, time_search_key,compared_time,is_num) for website in websites];
+TypeError: 'str' object does not support item assignment
+[2018-10-18 11:33:52,464] [ERROR] "POST /api/spotdetailcompared HTTP/1.1" 500 17504
+[2018-10-18 11:35:03,768] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 196
+[2018-10-18 11:35:52,289] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 230
+[2018-10-18 13:33:46,970] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 243
+[2018-10-18 13:34:52,417] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 243
+[2018-10-18 13:35:10,238] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 248
+[2018-10-18 13:39:00,115] [ERROR] Internal Server Error: /api/spotdetailcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 95, in post
+    return post_spot_detail_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 50, in post_spot_detail_compard
+    spots = [regioninfo.objects(id = id).search_key];
+AttributeError: 'QuerySet' object has no attribute 'search_key'
+[2018-10-18 13:39:00,309] [ERROR] "POST /api/spotdetailcompared HTTP/1.1" 500 16995
+[2018-10-18 13:39:51,556] [ERROR] Internal Server Error: /api/spotdetailcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 95, in post
+    return post_spot_detail_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 50, in post_spot_detail_compard
+    spots = [(regioninfo.objects(id = id)).search_key];
+AttributeError: 'QuerySet' object has no attribute 'search_key'
+[2018-10-18 13:39:51,817] [ERROR] "POST /api/spotdetailcompared HTTP/1.1" 500 16997
+[2018-10-18 13:40:25,318] [ERROR] Internal Server Error: /api/spotdetailcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 95, in post
+    return post_spot_detail_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 50, in post_spot_detail_compard
+    spots = [(regioninfo.objects(id = id)).get('search_key')];
+  File "E:\Anaconda\envs\en1\lib\site-packages\mongoengine\queryset\base.py", line 269, in get
+    queryset = queryset.filter(*q_objs, **query)
+  File "E:\Anaconda\envs\en1\lib\site-packages\mongoengine\queryset\base.py", line 229, in filter
+    return self.__call__(*q_objs, **query)
+  File "E:\Anaconda\envs\en1\lib\site-packages\mongoengine\queryset\base.py", line 111, in __call__
+    raise InvalidQueryError(msg)
+mongoengine.errors.InvalidQueryError: Not a query object: search_key. Did you intend to use key=value?
+[2018-10-18 13:40:25,663] [ERROR] "POST /api/spotdetailcompared HTTP/1.1" 500 17467
+[2018-10-18 13:41:22,513] [ERROR] Internal Server Error: /api/spotdetailcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\mongoengine\queryset\base.py", line 272, in get
+    result = next(queryset)
+  File "E:\Anaconda\envs\en1\lib\site-packages\mongoengine\queryset\base.py", line 1486, in __next__
+    raw_doc = next(self._cursor)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pymongo\cursor.py", line 1121, in next
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 95, in post
+    return post_spot_detail_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 50, in post_spot_detail_compard
+    spots = [(regioninfo.objects.get(id = id)).search_key];
+  File "E:\Anaconda\envs\en1\lib\site-packages\mongoengine\queryset\base.py", line 276, in get
+    raise queryset._document.DoesNotExist(msg)
+TourCommentApi.Models.RegionInfoModel.DoesNotExist: regioninfo matching query does not exist.
+[2018-10-18 13:41:23,091] [ERROR] "POST /api/spotdetailcompared HTTP/1.1" 500 17573
+[2018-10-18 13:42:04,358] [ERROR] Internal Server Error: /api/spotdetailcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\mongoengine\queryset\base.py", line 272, in get
+    result = next(queryset)
+  File "E:\Anaconda\envs\en1\lib\site-packages\mongoengine\queryset\base.py", line 1486, in __next__
+    raw_doc = next(self._cursor)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pymongo\cursor.py", line 1121, in next
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 95, in post
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailComparedView.py", line 50, in post_spot_detail_compard
+    #从数据库中抽取
+  File "E:\Anaconda\envs\en1\lib\site-packages\mongoengine\queryset\base.py", line 276, in get
+    raise queryset._document.DoesNotExist(msg)
+TourCommentApi.Models.RegionInfoModel.DoesNotExist: regioninfo matching query does not exist.
+[2018-10-18 13:42:04,584] [ERROR] "POST /api/spotdetailcompared HTTP/1.1" 500 17482
+[2018-10-18 13:43:05,433] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 230
+[2018-10-18 13:48:36,618] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 255
+[2018-10-18 13:49:19,355] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 197
+[2018-10-18 13:49:33,765] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 248
+[2018-10-18 13:49:57,617] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 243
+[2018-10-18 13:50:18,562] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 243
+[2018-10-18 13:53:54,605] [ERROR] Internal Server Error: /api/spotdetail/1
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 85, in get
+    return get_spot_detail(request,id);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 18, in get_spot_detail
+    if(datetime.datetime.now() < 6):
+TypeError: '<' not supported between instances of 'datetime.datetime' and 'int'
+[2018-10-18 13:53:55,173] [ERROR] "GET /api/spotdetail/1 HTTP/1.1" 500 94833
+[2018-10-18 13:53:56,646] [WARNING] Not Found: /favicon.ico
+[2018-10-18 13:53:56,648] [WARNING] "GET /favicon.ico HTTP/1.1" 404 3035
+[2018-10-18 13:56:56,628] [ERROR] Internal Server Error: /api/spotdetail/1
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 85, in get
+    return get_spot_detail(request,id);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 18, in get_spot_detail
+    if(int(datetime.datetime.now()) < 6):
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'datetime.datetime'
+[2018-10-18 13:56:57,172] [ERROR] "GET /api/spotdetail/1 HTTP/1.1" 500 94988
+[2018-10-18 14:03:36,643] [INFO] "GET /api/spotdetail/1 HTTP/1.1" 200 434
+[2018-02-18 14:04:14,411] [ERROR] Internal Server Error: /api/spotdetail/1
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 85, in get
+    return get_spot_detail(request,id);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 20, in get_spot_detail
+    now_date = str(datetime.datetime.now().year)  + ('-') + str(((datetime.datetime.now().isocalendar())[1]).zfill(2));
+AttributeError: 'int' object has no attribute 'zfill'
+[2018-02-18 14:04:14,833] [ERROR] "GET /api/spotdetail/1 HTTP/1.1" 500 94976
+[2018-02-18 14:10:08,949] [INFO] "GET /api/spotdetail/1 HTTP/1.1" 200 371
+[2018-02-18 14:11:02,225] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 488
+[2018-02-18 14:11:17,312] [INFO] "GET /api/spotlist HTTP/1.1" 200 3193
+[2018-02-18 14:14:42,420] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 488
+[2018-02-18 14:24:36,973] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 488
+[2018-06-18 14:28:02,613] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 468
+[2018-06-18 14:44:07,515] [INFO] "GET /api/spotdetail/5 HTTP/1.1" 200 468
+[2018-06-18 14:44:42,441] [INFO] "GET /api/spotdetail/17 HTTP/1.1" 200 468
+[2018-06-18 14:45:09,114] [INFO] "GET /api/spotdetail/18 HTTP/1.1" 200 466
+[2018-06-18 14:47:32,430] [INFO] "GET /api/spotdetail/18 HTTP/1.1" 200 466
+[2018-06-18 14:57:21,485] [INFO] "GET /api/spotdetail/18 HTTP/1.1" 200 487
+[2018-06-18 14:57:37,135] [INFO] "GET /api/spotdetail/1 HTTP/1.1" 200 362
+[2018-05-31 14:59:46,908] [INFO] "GET /api/spotdetail/1 HTTP/1.1" 200 644
+[2018-05-31 15:00:32,625] [INFO] "GET /api/spotdetail/1 HTTP/1.1" 200 644
+[2018-05-31 15:00:50,784] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 878
+[2018-05-31 15:11:08,049] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 1670
+[2018-05-31 15:18:15,146] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 878
+[2018-05-31 15:24:06,165] [ERROR] Internal Server Error: /api/spotdetail/2
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 85, in get
+    return get_spot_detail(request,id);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotDetailView.py", line 18, in get_spot_detail
+    if(datetime.datetime.now() < 4):
+TypeError: '<' not supported between instances of 'datetime.datetime' and 'int'
+[2018-05-31 15:24:07,245] [ERROR] "GET /api/spotdetail/2 HTTP/1.1" 500 95036
+[2018-05-31 15:26:41,813] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 442
+[2018-03-31 15:27:19,708] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 640
+[2018-04-01 15:27:57,951] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 414
+[2018-12-01 15:28:26,241] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 628
+[2018-12-31 15:31:15,560] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 625
+[2018-12-31 15:31:30,281] [INFO] "GET /api/spotdetail/18 HTTP/1.1" 200 637
+[2018-12-31 15:35:53,760] [INFO] "GET /api/spotdetail/18 HTTP/1.1" 200 625
+[2018-12-31 15:36:22,623] [INFO] "GET /api/spotdetail/17 HTTP/1.1" 200 630
+[2018-03-31 15:38:49,196] [INFO] "GET /api/spotdetail/7 HTTP/1.1" 200 636
+[2018-03-31 15:39:17,334] [INFO] "GET /api/spotdetail/12 HTTP/1.1" 200 631
+[2018-12-30 15:40:00,081] [INFO] "GET /api/spotdetail/14 HTTP/1.1" 200 589
+[2018-12-30 15:40:37,248] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 613
+[2018-12-30 15:41:00,301] [INFO] "GET /api/spotdetail/3 HTTP/1.1" 200 603
+[2018-12-30 15:57:53,308] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 230
+[2018-12-30 15:59:08,955] [INFO] "GET /api/spotdetail/3 HTTP/1.1" 200 625
+[2018-12-30 16:02:24,979] [INFO] "POST /api/login HTTP/1.1" 200 223
+[2018-12-30 16:03:23,122] [INFO] "GET /api/spotlist HTTP/1.1" 200 3193
+[2018-12-30 16:03:52,983] [INFO] "GET /api/qdhspotlist HTTP/1.1" 200 3651
+[2018-12-30 16:04:28,023] [INFO] "GET /api/qdhstate HTTP/1.1" 200 95
+[2018-12-30 16:05:56,064] [INFO] This is an errormsg
+[2018-12-30 16:05:56,102] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-12-30 16:06:29,425] [INFO] This is an errormsg
+[2018-12-30 16:06:29,449] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-12-30 16:07:03,089] [INFO] This is an errormsg
+[2018-12-30 16:07:03,105] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-12-30 16:07:36,418] [INFO] This is an errormsg
+[2018-12-30 16:07:36,447] [INFO] "POST /api/spotcompared HTTP/1.1" 200 47
+[2018-12-30 16:08:35,444] [INFO] "POST /api/spotcompared HTTP/1.1" 200 214
+[2018-12-30 16:13:25,832] [INFO] "GET /api/qdhstate HTTP/1.1" 200 92
+[2018-12-30 16:13:39,536] [ERROR] Internal Server Error: /api/spotcompared
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 102, in post
+    return post_spot_compard(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotComparedView.py", line 75, in post_spot_compard
+    time_list = get_time_list(start_time,end_time,time);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\CommonView.py", line 57, in get_time_list
+    end_date = int(endTime.split('-')[1]);
+IndexError: list index out of range
+[2018-12-30 16:13:40,036] [ERROR] "POST /api/spotcompared HTTP/1.1" 500 17053
+[2018-12-30 16:15:10,305] [INFO] "POST /api/spotcompared HTTP/1.1" 200 48414
+[2018-12-30 16:15:23,193] [INFO] "POST /api/spotcompared HTTP/1.1" 200 18685
+[2018-12-30 16:16:24,204] [WARNING] Not Found: /spotdetail/2
+[2018-12-30 16:16:24,223] [WARNING] "GET /spotdetail/2 HTTP/1.1" 404 3038
+[2018-12-30 16:16:46,920] [INFO] "GET /api/spotdetail/2 HTTP/1.1" 200 635
+[2018-12-30 16:17:18,249] [INFO] "GET /api/spotdetail/17 HTTP/1.1" 200 652
+[2018-12-30 16:17:46,968] [INFO] "GET /api/spotdetail/18 HTTP/1.1" 200 647
+[2018-12-30 16:19:20,130] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 240
+[2018-12-30 16:20:04,190] [INFO] "GET /api/spotdetail/1 HTTP/1.1" 200 483
+[2018-12-30 16:20:17,480] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 184
+[2018-10-18 18:55:04,629] [INFO] "GET /admin/ HTTP/1.1" 302 0
+[2018-10-18 18:55:05,515] [INFO] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1859
+[2018-10-18 18:55:05,821] [INFO] "GET /static/admin/css/base.css HTTP/1.1" 200 16106
+[2018-10-18 18:55:06,039] [INFO] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[2018-10-18 18:55:06,047] [INFO] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17894
+[2018-10-18 18:55:06,171] [INFO] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2018-10-18 18:55:06,411] [INFO] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[2018-10-18 18:55:06,411] [INFO] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[2018-10-18 18:55:11,752] [INFO] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2018-10-18 18:55:11,886] [INFO] "GET /admin/ HTTP/1.1" 200 5340
+[2018-10-18 18:55:11,965] [INFO] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[2018-10-18 18:55:12,399] [INFO] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[2018-10-18 18:55:12,400] [INFO] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[2018-10-18 18:55:12,442] [INFO] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2018-10-18 18:55:22,256] [ERROR] Internal Server Error: /admin/djcelery/periodictask/add/
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: djcelery_intervalschedule
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = response.render()
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\loader_tags.py", line 194, in render
+    return template.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 999, in render
+    return render_value_in_context(output, context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\template\base.py", line 978, in render_value_in_context
+    value = str(value)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\utils\html.py", line 380, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\forms\boundfield.py", line 36, in __str__
+    return self.as_widget()
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\forms\boundfield.py", line 118, in as_widget
+    **kwargs
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\forms\widgets.py", line 234, in render
+    context = self.get_context(name, value, attrs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\contrib\admin\widgets.py", line 295, in get_context
+    'rendered_widget': self.widget.render(name, value, attrs),
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\forms\widgets.py", line 234, in render
+    context = self.get_context(name, value, attrs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\forms\widgets.py", line 677, in get_context
+    context = super().get_context(name, value, attrs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\forms\widgets.py", line 637, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\forms\widgets.py", line 585, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\forms\models.py", line 1140, in __iter__
+    for obj in queryset:
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\db\models\query.py", line 336, in _iterator
+    yield from self._iterable_class(self, chunked_fetch=use_chunked_fetch, chunk_size=chunk_size)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\db\models\sql\compiler.py", line 1066, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\db\backends\sqlite3\base.py", line 303, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: djcelery_intervalschedule
+[2018-10-18 18:55:23,922] [ERROR] "GET /admin/djcelery/periodictask/add/ HTTP/1.1" 500 526588

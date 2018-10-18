@@ -1,38 +1,62 @@
 # -*- coding: utf-8 -*-
-from mongoengine import  *
-import datetime
-import re
-# from .Models.RegionInfoModel import *;
-connect(db='dspider2',
-    username='lab421',
-    password='lab421_1',
-    host='120.55.59.187',
-port = 28117,
-        authentication_source='admin');
+# from mongoengine import  *
+# import datetime
+# import re
+# # from .Models.RegionInfoModel import *;
 
-
-class regioninfo(Document):
-    _id = BinaryField(required=True)
-    id = StringField(required=True)
-    address = StringField(required=True)
-    name = StringField(required=True)
-    lng = FloatField(required=True)
-    lat = FloatField(required=True)
-    search_key = StringField(required=True)
-
+# connect(db='dspider2',
+#     username='lab421',
+#     password='lab421_1',
+#     host='120.55.59.187',
+# port = 28117,
+#         authentication_source='admin');
+#
+#
+# class regioninfo(Document):
+#     _id = BinaryField(required=True)
+#     id = StringField(required=True)
+#     address = StringField(required=True)
+#     name = StringField(required=True)
+#     lng = FloatField(required=True)
+#     lat = FloatField(required=True)
+#     search_key = StringField(required=True)
+def get_global():
+    global temp;
+    temp = 1;
+get_global();
+c = 1;
+def change_global(c):
+    c = 2;
+    return c;
 def return2Value(i):
     return 1,i + 1;
+import datetime
 if __name__ == '__main__':
-    x = 4
-    a = [1,2,3,4];
+    d = {'a': 1, 'b': 4, 'c': 2}
+    d = sorted(d.items(), key=lambda x: x[1], reverse=True)
+    print(d);
+    print(c);
+    c = change_global(c);
+    print(c);
 
-    b = ([return2Value(i) for i in a]);
-    print(type(b));
-    time = '2018-09-03';
-    t = time.split('-');
-    print((datetime.date(int(t[0]),int(t[1]),int(t[2])).isocalendar())[1]);
-    print(11111);
-    print(a[-1]);
+#     get_global();
+#     print(temp);
+    # x = 4
+    # a = [1,2,3,4];
+    #
+    # b = ([return2Value(i) for i in a]);
+    # print(type(b));
+    # time = '2018-09-03';
+    # t = time.split('-');
+    # print(t[0]);
+    # print(t[1]);
+    # print(t[2]);
+    # week = str((datetime.date(int(t[0]), int(t[1]), int(t[2])).isocalendar())[1]);
+    #
+    # print(t[0] + '-' + (week));
+
+    # print(11111);
+    # print(a[-1]);
     # dict = [
     #     {'id': '4', 'name': 'b'},
     #     {'id': '6', 'name': 'c'},
