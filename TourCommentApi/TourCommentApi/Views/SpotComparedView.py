@@ -17,7 +17,8 @@ def get_data(comments_data,isNum):
 def get_region_data(website,spot,time_search_key,time_list,is_num):
 
     region_res = {};
-    # 一个景区在平台上的评论
+    # 一个景区在平台上的评论 获取景区_平台_景点
+    region_website_spot_dic = get_region_website_spot_dic();
     spot_website_comments_data = region_website_spot_dic[spot + ('_') + (website) + ("_景点")];
 
     cnts = [get_data(spot_website_comments_data[
@@ -45,45 +46,46 @@ def get_website_data(website,time_search_key, time_list,spots,is_num):
 
 #获取景区比较
 def post_spot_compard(request):
+    try:
+        #post中拿到景区列表 和开始结束时间
+        body = json.loads(request.body);
+        spots = (body['spots']);
+        #后台默认加上千岛湖
+        spots.append('千岛湖');
 
-    #post中拿到景区列表 和开始结束时间
-    body = json.loads(request.body);
-    spots = (body['spots']);
-    #后台默认加上千岛湖
-    spots.append('千岛湖');
+        start_time = body['startTime'];
 
-    start_time = body['startTime'];
+        end_time = body['endTime'];
 
-    end_time = body['endTime'];
+        websites = (body['websites']);
 
-    websites = (body['websites']);
+        #是评论数量还是评分
+        is_num = body['type'];
 
-    #是评论数量还是评分
-    is_num = body['type'];
+        #获取时间颗粒度
+        time = body['time'];
+        #
+            #加上默认的千岛湖
+        time_search_keys = {
+            '年':'comment_year',
+            '季度':'comment_season',
+            '月':'comment_month',
+            '周':'comment_week'
+        };
 
-    #获取时间颗粒度
-    time = body['time'];
-    #
-        #加上默认的千岛湖
-    time_search_keys = {
-        '年':'comment_year',
-        '季度':'comment_season',
-        '月':'comment_month',
-        '周':'comment_week'
-    };
+        time_list = get_time_list(start_time,end_time,time);
+            #外面一层平台遍历 里面一层景区遍历
 
-    time_list = get_time_list(start_time,end_time,time);
-        #外面一层平台遍历 里面一层景区遍历
+        res = {};
 
-    res = {};
+        #字段含义 网站 时间搜索颗粒度 时间跨度 景区搜索关键字 统计评分还是数量
+        list = [get_website_data(website,time_search_keys[time],time_list,spots,is_num) for website in websites];
 
-    #字段含义 网站 时间搜索颗粒度 时间跨度 景区搜索关键字 统计评分还是数量
-    list = [get_website_data(website,time_search_keys[time],time_list,spots,is_num) for website in websites];
+        res['list'] = list;
+        return json_response(res);
 
-    res['list'] = list;
-    return json_response(res);
-
-
+    except Exception:
+        return json_error(error_string="查询发生错误", code=11,api = "spotcompared");
 
 
 

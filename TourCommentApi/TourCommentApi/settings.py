@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
 
 
+
 ]
 # django-rest-framework设置
 
@@ -108,7 +109,7 @@ from mongoengine import connect
 connect(db='dspider2',
     username='lab421',
     password='lab421_1',
-    host='127.0.0.1',
+    host='localhost',
 port = 28117,
        authentication_source='admin'); # 连接的数据库名称
 # connect(db='dspider2',

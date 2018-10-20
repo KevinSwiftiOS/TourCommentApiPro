@@ -31,9 +31,11 @@ def get_qdh_spot_list(request):
 
         #增加本月评分和评论数量
         now_month = str(datetime.datetime.now().year) + '-' + str(datetime.datetime.now().month).zfill(2);
-
+        #获取数据
+        comments_data = get_comment_data();
+        #统计本月的 如果是总共的？
         qdh_comment_data = comments_data[
-            (comments_data['search_key'] == '千岛湖') & (comments_data['comment_month'] == now_month)];
+            (comments_data['search_key'] == '千岛湖')];
 
 
         list = [get_one_qdh_spot(inner_region,qdh_comment_data) for inner_region in innerregioninfo.objects];
@@ -42,7 +44,7 @@ def get_qdh_spot_list(request):
         res['list'] = list;
         return json_response(res);
     except Exception:
-        return json_error(error_string='查询发生错误', code=11);
+        return json_error(error_string='查询发生错误', code=11,api = 'qdhspotlist');
 
 class QdhSpotListView(APIView):
 

@@ -2460,3 +2460,177 @@ Traceback (most recent call last):
     return Database.Cursor.execute(self, query, params)
 django.db.utils.OperationalError: no such table: djcelery_intervalschedule
 [2018-10-18 18:55:23,922] [ERROR] "GET /admin/djcelery/periodictask/add/ HTTP/1.1" 500 526588
+[2018-10-18 19:07:05,669] [INFO] "GET /admin/ HTTP/1.1" 200 2982
+[2018-10-18 19:11:25,414] [INFO] "GET /admin/ HTTP/1.1" 200 5336
+[2018-10-18 19:11:28,208] [INFO] "GET /admin/djcelery/periodictask/add/ HTTP/1.1" 200 11707
+[2018-10-18 19:11:28,368] [INFO] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[2018-10-18 19:11:28,374] [INFO] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[2018-10-18 19:11:28,383] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[2018-10-18 19:11:28,397] [INFO] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[2018-10-18 19:11:28,644] [INFO] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8729
+[2018-10-18 19:11:28,657] [INFO] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[2018-10-18 19:11:28,806] [INFO] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[2018-10-18 19:11:29,046] [INFO] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[2018-10-18 19:11:29,050] [INFO] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[2018-10-18 19:11:29,071] [INFO] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20283
+[2018-10-18 19:11:29,073] [INFO] "GET /static/admin/js/collapse.js HTTP/1.1" 200 1151
+[2018-10-18 19:11:29,082] [INFO] "GET /static/admin/js/core.js HTTP/1.1" 200 7134
+[2018-10-18 19:11:29,268] [INFO] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6897
+[2018-10-18 19:11:29,514] [INFO] "GET /static/admin/js/actions.js HTTP/1.1" 200 6502
+[2018-10-18 19:11:29,517] [INFO] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[2018-10-18 19:11:29,522] [INFO] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[2018-10-18 19:12:33,939] [INFO] "GET /admin/djcelery/intervalschedule/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3812
+[2018-10-18 19:12:34,130] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[2018-10-18 19:12:39,594] [INFO] "POST /admin/djcelery/intervalschedule/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3965
+[2018-10-18 19:12:39,784] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[2018-10-18 19:12:46,998] [INFO] "POST /admin/djcelery/intervalschedule/add/?_to_field=id&_popup=1 HTTP/1.1" 200 370
+[2018-10-18 19:12:47,350] [INFO] "GET /static/admin/js/popup_response.js HTTP/1.1" 200 569
+[2018-10-18 19:16:56,035] [INFO] "POST /admin/djcelery/periodictask/add/ HTTP/1.1" 302 0
+[2018-10-18 19:16:56,445] [INFO] "GET /admin/djcelery/periodictask/ HTTP/1.1" 200 6365
+[2018-10-18 19:16:56,862] [INFO] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[2018-10-18 19:16:56,887] [INFO] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[2018-10-18 19:16:56,891] [INFO] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[2018-10-18 19:16:56,893] [INFO] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[2018-10-18 19:16:57,233] [INFO] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[2018-10-18 19:16:57,515] [INFO] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[2018-10-19 16:53:24,540] [INFO] "GET /api/spotlist HTTP/1.1" 200 3193
+[2018-10-19 17:05:06,126] [INFO] "GET /api/spotlist HTTP/1.1" 200 3193
+[2018-10-19 17:05:38,482] [INFO] "GET /api/spotlist HTTP/1.1" 200 3193
+[2018-10-19 17:08:16,511] [INFO] "GET /api/spotlist HTTP/1.1" 200 3193
+[2018-10-19 17:10:53,350] [INFO] "GET /api/spotlist HTTP/1.1" 200 3193
+[2018-10-19 17:16:30,655] [INFO] "GET /api/spotlist HTTP/1.1" 200 3193
+[2018-10-20 10:25:58,889] [INFO] "POST /api/login HTTP/1.1" 200 223
+[2018-10-20 10:26:11,567] [ERROR] Internal Server Error: /api/spotlist
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\indexes\base.py", line 3064, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'search_key'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotListView.py", line 27, in get_spot_list
+    list = [get_one_spot(region) for region in regioninfo.objects];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotListView.py", line 27, in <listcomp>
+    list = [get_one_spot(region) for region in regioninfo.objects];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotListView.py", line 17, in get_one_spot
+    spot_comment_data = comments_data[(comments_data['search_key'] == str(region.search_key))]
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\frame.py", line 2688, in __getitem__
+    return self._getitem_column(key)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\frame.py", line 2695, in _getitem_column
+    return self._get_item_cache(key)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\generic.py", line 2486, in _get_item_cache
+    values = self._data.get(item)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\internals.py", line 4115, in get
+    loc = self.items.get_loc(item)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\indexes\base.py", line 3066, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'search_key'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotListView.py", line 41, in get
+    return get_spot_list(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotListView.py", line 32, in get_spot_list
+    return json_error(error_string='查询发生错误',code = 11);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\CommonView.py", line 36, in json_error
+    logger.info('时间:' + time + ' 错误信息:' + error_string + " code:" + code + "接口为:" + api);
+TypeError: must be str, not int
+[2018-10-20 10:26:12,812] [ERROR] "GET /api/spotlist HTTP/1.1" 500 19685
+[2018-10-20 10:30:24,701] [ERROR] Internal Server Error: /api/spotlist
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\indexes\base.py", line 3064, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'search_key'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotListView.py", line 27, in get_spot_list
+    list = [get_one_spot(region) for region in regioninfo.objects];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotListView.py", line 27, in <listcomp>
+    list = [get_one_spot(region) for region in regioninfo.objects];
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotListView.py", line 17, in get_one_spot
+    spot_comment_data = comments_data[(comments_data['search_key'] == str(region.search_key))]
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\frame.py", line 2688, in __getitem__
+    return self._getitem_column(key)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\frame.py", line 2695, in _getitem_column
+    return self._get_item_cache(key)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\generic.py", line 2486, in _get_item_cache
+    values = self._data.get(item)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\internals.py", line 4115, in get
+    loc = self.items.get_loc(item)
+  File "E:\Anaconda\envs\en1\lib\site-packages\pandas\core\indexes\base.py", line 3066, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'search_key'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Anaconda\envs\en1\lib\site-packages\rest_framework\views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotListView.py", line 41, in get
+    return get_spot_list(request);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\SpotListView.py", line 32, in get_spot_list
+    return json_error(error_string='查询发生错误',code = 11);
+  File "D:\资料\GitHub\TourCommentApiPro\TourCommentApi\TourCommentApi\Views\CommonView.py", line 36, in json_error
+    logger.info('时间:' + str(time) + ' 错误信息:' + error_string + " code:" + code + "接口为:" + api);
+TypeError: must be str, not int
+[2018-10-20 10:30:25,151] [ERROR] "GET /api/spotlist HTTP/1.1" 500 19690
+[2018-10-20 10:33:00,104] [INFO] 时间:2018-10-20 10:33:00 错误信息:查询发生错误 code:11接口为:
+[2018-10-20 10:33:00,111] [INFO] "GET /api/spotlist HTTP/1.1" 200 52
+[2018-10-20 10:47:50,239] [INFO] 时间:2018-10-20 10:47:50 错误信息:查询发生错误 code:11接口为:spotlist
+[2018-10-20 10:47:50,242] [INFO] "GET /api/spotlist HTTP/1.1" 200 52
+[2018-10-20 10:53:39,804] [INFO] 时间:2018-10-20 10:53:39 错误信息:查询发生错误 code:11接口为:spotlist
+[2018-10-20 10:53:39,808] [INFO] "GET /api/spotlist HTTP/1.1" 200 52
+[2018-10-20 10:58:08,643] [INFO] "GET /api/spotlist HTTP/1.1" 200 3193
+[2018-10-20 10:59:18,658] [INFO] "POST /api/spotcompared HTTP/1.1" 200 18685
+[2018-10-20 10:59:51,354] [INFO] "GET /api/spotdetail/17 HTTP/1.1" 200 615
+[2018-10-20 11:00:15,581] [INFO] "POST /api/spotdetailcompared HTTP/1.1" 200 184

@@ -5,12 +5,13 @@ def get_user(request):
     # username = decodeToken(request);
     # print(username);
     try:
+        #获取用户信息
         res = {};
         username = decodeToken(request);
         res['username'] = username;
         return json_response(res);
     except Exception:
-        return json_error(error_string='查询发生错误', code=11);
+        return json_error(error_string='获取用户信息失败', code=11,api='getuser');
 
 class GetUserView(APIView):
 

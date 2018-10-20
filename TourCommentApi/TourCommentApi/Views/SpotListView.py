@@ -8,6 +8,8 @@ from .CommonView import *
 
 def get_one_spot(region):
 
+        comments_data = get_comment_data();
+
         data = {};
         data['id'] = region.id;
         data['name'] = region.name;
@@ -24,12 +26,13 @@ def get_spot_list(request):
     # print(username);
     res = {};
     try:
+
         list = [get_one_spot(region) for region in regioninfo.objects];
        # 返回所有的文档对象列表
         res['list'] = list;
         return json_response(res);
     except Exception:
-        return json_error(error_string='查询发生错误',code = 11);
+        return json_error(error_string='查询发生错误',code = 11,api = "spotlist");
 
 
 

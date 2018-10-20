@@ -5,7 +5,7 @@ import json
 from django.http import HttpResponse
 from rest_framework_jwt.utils import jwt_decode_handler
 import re,logging
-
+import datetime
 import numpy as np;
 from ..Models.ConnectToDBModel import *
 #编码为json
@@ -23,16 +23,19 @@ def response_as_json(data, foreign_penetrate=False):
     response["Access-Control-Allow-Headers"] = "*"
     return response
 #错误返回
-def json_error(error_string="", code=500, **kwargs):
+def json_error(error_string="", code=500,api = "",**kwargs):
     data = {
         "code": code,
         "message": error_string,
         "data": {}
     }
     logger = logging.getLogger('django')
-    logger.info('This is an errormsg')
-    return response_as_json(data)
+    #时间
+    time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
+    logger.info('时间:' + str(time) + ' 错误信息:' + error_string + " code:" + str(code) + "接口为:" + api);
+    return response_as_json(data);
+#正常返回
 def json_response(data,code=0, foreign_penetrate=False, **kwargs):
      res = {};
      res['data'] = data;
@@ -98,7 +101,7 @@ def get_time_list(startTime,endTime,time):
 #获取排名
 
 def get_rank(key):
-    return spot_ranks_dic[key];
+    return (get_spot_ranks_dic())[key];
 
 #获取平均分，为np.nan的时候返回0
 def get_score(score):

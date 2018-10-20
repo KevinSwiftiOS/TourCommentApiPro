@@ -20,7 +20,7 @@ def login(request):
     try:
         users = user.objects.get(username=username);
         if (users.password != password):
-            return json_error(error_string='用户密码错误', code=10);
+            return json_error(error_string='用户密码错误', code=10,api='login');
         else:
 
             data = {};
@@ -32,4 +32,4 @@ def login(request):
 
             return json_response(data);
     except user.DoesNotExist:
-        return json_error(error_string='用户不存在', code=9);
+        return json_error(error_string='用户不存在', code=9,api='login');
