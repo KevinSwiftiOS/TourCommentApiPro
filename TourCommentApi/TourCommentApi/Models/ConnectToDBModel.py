@@ -161,7 +161,7 @@ def get_region_website_spot_dic():
     return region_website_spot_dic;
 #计划每周清晨开启数据库连接操作
 sched = BackgroundScheduler();
-sched.add_job(client_to_db_convert_comment_data, 'cron',day_of_week='1-6', hour=15, minute=30);
+sched.add_job(client_to_db_convert_comment_data, 'cron',day_of_week='1-6', hour=21, minute=00);
 sched.start();
 
 
