@@ -12,6 +12,9 @@ def get_spot_detail(request,id):
         #获取景区对象后加载数据
         #当前的景区
         curr_spot = (regioninfo.objects.get(id=str(id))).search_key;
+        #打印出当前景区
+        print(111);
+        print(curr_spot);
         spots = [(regioninfo.objects.get(id = str(id))).search_key];
         #若当前景区不是千岛湖 需要加上千岛湖
         if(id != '1'):
@@ -30,7 +33,7 @@ def get_spot_detail(request,id):
 
         start_date = str(datetime.datetime.now().year) + '-01';
         #这里需要进行判断如果是6月前 返回周 如果是6月后 返回月 增加time字段
-        now_month = str(datetime.datetime.now().year).join('-').join(str(datetime.datetime.now().month).zfill(2));
+        now_month = str(datetime.datetime.now().year) + ('-') + (str(datetime.datetime.now().month).zfill(2));
         #获取开始至结束时间段
         time_list = get_time_list(start_date,now_date,time);
         res = {};
@@ -39,10 +42,12 @@ def get_spot_detail(request,id):
         #获取景区数据
         comments_data = get_comment_data();
         #这里统计始终是本月
-        spot_comment_data =  comments_data[
+        curr_spot_comments_data =  comments_data[
             (comments_data['search_key'] == curr_spot) & (comments_data['comment_month'] == now_month)];
-        res['monthCommentNumber'] = spot_comment_data.iloc[:,0].size;
-        res['monthCommentScore'] = get_score(spot_comment_data['comment_score'].mean());
+        print(222);
+        print(curr_spot_comments_data.iloc[:,0].size);
+        res['monthCommentNumber'] = curr_spot_comments_data.iloc[:,0].size;
+        res['monthCommentScore'] = get_score(curr_spot_comments_data['comment_score'].mean());
         res['yearCommentNumber'] = comments_data[
             (comments_data['search_key'] == curr_spot) & (comments_data['comment_year'] == str(datetime.datetime.now().year))].iloc[:,0].size;
         #获取排名
@@ -77,7 +82,7 @@ def get_spot_detail(request,id):
         res['scoreAxis'] = scoreAxis;
         return json_response(res);
     except Exception:
-        return json_error(error_string="查询发生错误", code=11,api = "spotdetailcompared");
+        return json_error(error_string="查询发生错误", code=12,api = "spotdetailcompared");
 
 
 

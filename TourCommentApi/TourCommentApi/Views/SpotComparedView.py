@@ -85,7 +85,7 @@ def post_spot_compard(request):
         return json_response(res);
 
     except Exception:
-        return json_error(error_string="查询发生错误", code=11,api = "spotcompared");
+        return json_error(error_string="查询发生错误", code=12,api = "spotcompared");
 
 
 

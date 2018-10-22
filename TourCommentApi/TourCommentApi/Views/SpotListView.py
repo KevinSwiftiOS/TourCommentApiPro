@@ -32,7 +32,7 @@ def get_spot_list(request):
         res['list'] = list;
         return json_response(res);
     except Exception:
-        return json_error(error_string='查询发生错误',code = 11,api = "spotlist");
+        return json_error(error_string='查询发生错误',code = 12,api = "spotlist");
 
 
 

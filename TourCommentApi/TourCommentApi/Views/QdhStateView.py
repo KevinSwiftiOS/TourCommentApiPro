@@ -19,7 +19,7 @@ def get_qdh_state(request):
         res['rank'] = get_rank('千岛湖');
         return json_response(res);
     except Exception:
-        return json_error(error_string="查询发生错误", code=11,api = "qdhstate");
+        return json_error(error_string="查询发生错误", code=12,api = "qdhstate");
 
 
 class QdhStateView(APIView):
